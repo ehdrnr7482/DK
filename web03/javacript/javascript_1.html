@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <link type="text/css" rel="stylesheet" href="/web03/css/init.css">
+    <link type="text/css" rel="stylesheet" href="/web03/css/layout.css">
+    <link type="text/css" rel="stylesheet" href="/web03/css/navigation.css">
+    <script type="text/javascript" src="/web03/js/exercise.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul class="top-nav-menu bg-color-gray">
+                <li class="top-nav-item"><a href="/web03/page/main.html">메인</a></li>
+                <li class="top-nav-item"><a href="/web03/page/html.html">HTML</a></li>
+                <li class="top-nav-item"><a href="/web03/page/css.html">CSS</a></li>
+                <li class="top-nav-item active"><a href="/web03/page/javascript.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+    <h1 class="under-line">javascript_1</h1>
+    <h1 onclick="console.log('Hello JavaScript!!');">클릭하세요!</h1>
+    <h1 onclick="alert('Hello JavaScript!!');">클릭하세요!</h1>
+    <h1 onclick="document.write('Hello JavaScript');">클릭하세요!</h1>
+    <h1 onclick="document.getElementById('res').innerHTML = 'Hello JavaScript'">클릭하세요!</h1>
+    <h1 onclick="func1();">클릭하세요!</h1>
+    <h1 onclick="func2(document.getElementById('res'));">클릭하세요!</h1>
+    <h1 id="res"></h1>
+    <hr>
+    <h1 onclick="console.log(confirm('확인/취소 중 선택'));">확인/취소 알람</h1>
+    <h1 onclick="console.log(prompt('임의의 값을 입력하세요.'));">사용자 입력을 받을 수 있는 알람</h1>
+    <h1 onclick="document.getElementById('res2').innerHTML = prompt();">사용자 입력값을 innerHTML으로 출력</h1>
+    <div>
+        <input type="text" id="user_in">
+        <input type="button" value="입력" onclick="document.getElementById('res2').innerHTML = document.getElementById('user_in').value">
+    </div>
+    <h1 id="res2"></h1>
+</body>
+</html>
